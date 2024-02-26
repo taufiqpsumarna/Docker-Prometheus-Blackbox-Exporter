@@ -1,8 +1,6 @@
 ![Grafana Dashboard](/img/Dashboard.png)
 
-# Docker-Prometheus-Blackbox-Exporter
-Docker Prometheus Blackbox Exporter Config Example
-
+# Docker Prometheus Blackbox Exporter Config Example
 This repository contains configurations and instructions for setting up Prometheus and Blackbox Exporter to monitor your websites.
 
 ## Table of Contents
