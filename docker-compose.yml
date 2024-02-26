@@ -1,0 +1,19 @@
+version: '3.7'
+services:
+  prometheus:
+    image: prom/prometheus:v2.50.0
+    restart: unless-stopped
+    ports:
+      - '9091:9090'
+    volumes:
+      - ./config/prometheus.yml:/etc/prometheus/prometheus.yml
+
+  blackbox:
+    image: prom/blackbox-exporter:v0.24.0
+    restart: unless-stopped
+    ports:
+      - '9115:9115'
+    command:
+      - '--config.file=/etc/blackbox/blackbox.yml'
+    volumes:
+      - ./config/blackbox.yml:/etc/blackbox/blackbox.yml
