@@ -37,12 +37,12 @@ This repository contains configurations and instructions for setting up Promethe
     First create a folder for the volume on the host machine, e.g.:
 
     ```
-    mkdir /tmp/prometheus
+    mkdir ./data/prometheus
     ```
 
     Then change the folder owner to nobody, like (use sudo if needed):
     ```
-    chown 65534:65534 /tmp/prometheus
+    chown 65534:65534 ./data/prometheus
     ```
 
 4. Run Docker Compose to start Prometheus and Blackbox Exporter:
