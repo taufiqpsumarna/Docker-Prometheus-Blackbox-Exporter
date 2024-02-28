@@ -20,21 +20,34 @@ This repository contains configurations and instructions for setting up Promethe
 
 1. Clone this repository:
 
-    ```bash
+    ```
     git clone https://github.com/taufiqpsumarna/Docker-Prometheus-Blackbox-Exporter.git
     ```
 
 2. Navigate to the project directory:
 
-    ```bash
+    ```
     cd Docker-Prometheus-Blackbox-Exporter
     ```
 
 3. Update Prometheus configuration (`prometheus.yml`) and Blackbox Exporter configuration (`blackbox.yml`) with your specific settings.
 
+4. Create persistent data volume for storing prometheus data
+
+    First create a folder for the volume on the host machine, e.g.:
+
+    ```
+    mkdir /tmp/prometheus
+    ```
+
+    Then change the folder owner to nobody, like (use sudo if needed):
+    ```
+    chown 65534:65534 /tmp/prometheus
+    ```
+
 4. Run Docker Compose to start Prometheus and Blackbox Exporter:
 
-    ```bash
+    ```
     docker-compose up -d
     ```
 
