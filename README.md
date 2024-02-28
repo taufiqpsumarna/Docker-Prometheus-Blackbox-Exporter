@@ -75,10 +75,18 @@ The provided `docker-compose.yml` file sets up Prometheus and Blackbox Exporter 
 - Make sure to replace the example URLs in `blackbox.yml` with the actual websites you want to monitor.
 
 ## Grafana Dashboard
-- You can use Dashboard below
-    - [Prometheus Blackbox Exporter](https://grafana.com/grafana/dashboards/14928-prometheus-blackbox-exporter/)
-    - [Blackbox Exporter (HTTP prober)](https://grafana.com/grafana/dashboards/13659-blackbox-exporter-http-prober/)
-    - [Prometheus Blackbox Exporter](https://grafana.com/grafana/dashboards/7587-prometheus-blackbox-exporter/)
+- You can use Dashboard below:
+    - # Blackbox Exporter (HTTP prober)
+      ![Blackbox Exporter (HTTP prober](/img/Dashboard_1.png)
+       - [Blackbox Exporter (HTTP prober)](https://grafana.com/grafana/dashboards/13659-blackbox-exporter-http-prober/)
+    
+    - # Prometheus Blackbox Exporter
+      ![Prometheus Blackbox Exporter](/img/Dashboard_2.png)
+        - [Prometheus Blackbox Exporter](https://grafana.com/grafana/dashboards/14928-prometheus-blackbox-exporter/)
+    
+    - # Prometheus Blackbox Exporter
+      ![Prometheus Blackbox Exporter](/img/Dashboard_3.png)
+       - [Prometheus Blackbox Exporter](https://grafana.com/grafana/dashboards/7587-prometheus-blackbox-exporter/)
 - Or Using modified version by me here [Modified Grafana Dashboard](dashboard.json)
 
 ## Additional Information
